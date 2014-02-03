@@ -56,13 +56,16 @@ class MyAdapter extends FragmentStatePagerAdapter
         {
             fragment=new AboutUs();
         }
-        return fragment;
+        if(i==3)
+        {
+            fragment=new Messages();
+        }        return fragment;
     }
 
     @Override
     public int getCount() {
 //        Log.d("VIVZ", "get Count is called");
-        return 3;
+        return 4;
     }
 
     @Override
@@ -78,6 +81,10 @@ class MyAdapter extends FragmentStatePagerAdapter
         if(position==2)
         {
             return "About Us";
+        }
+        if(position==3)
+        {
+            return "Messages";
         }
         return null;
     }
