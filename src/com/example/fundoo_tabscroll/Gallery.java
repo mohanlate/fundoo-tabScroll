@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView.FindListener;
 
 
 public class Gallery extends Fragment {
@@ -20,14 +21,8 @@ public class Gallery extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(savedInstanceState==null)
-        {
-            Log.d("VIVZ","onCreate FIRST TIME");
-        }
-        else
-        {
-            Log.d("VIVZ","onCreate SUBSEQUENT TIME");
-        }
+
+ 
 
     }
 

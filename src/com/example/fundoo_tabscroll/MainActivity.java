@@ -89,7 +89,7 @@ class MyAdapter extends FragmentStatePagerAdapter
     public CharSequence getPageTitle(int position) {
         if(position==0)
         {
-            return "Home";
+            return "Welcome";
         }
         if(position==1)
         {
