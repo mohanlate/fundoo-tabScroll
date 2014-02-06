@@ -13,8 +13,10 @@ import android.webkit.WebView.FindListener;
 public class Services extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        WebView wv = (WebView) container.findViewById(R.id.webView1);
-        if(wv != null) wv.loadUrl("http://www.google.com");
+    	View vw = inflater.inflate(R.layout.services, container,false);
+    	WebView wv = (WebView) vw.findViewById(R.id.webView1);
+        if(wv != null) wv.loadUrl("http://www.gmail.com");
+        wv.setInitialScale(50);
     	return inflater.inflate(R.layout.services, container, false);
     }
 }
